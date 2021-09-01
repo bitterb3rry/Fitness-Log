@@ -1,0 +1,100 @@
+/* || Reminder Styling */
+#reminderHide {
+  display: none;
+}
+
+#reminderBar {
+  background-color: #5361E0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#reminderBar h4 {
+  color: #000;
+  font-style: italic;
+  font-weight: 800;
+  font-size: larger;
+}
+
+#reminderQuestion {
+  min-width: 250px;
+  width: 100%; /* FIX WIDTH */
+  display: flex;
+  justify-content: space-between;
+}
+
+#reminderQuestion p {
+  color: #fff;
+  padding: 5px 0px 5px 0px;
+  margin: auto 0 auto 0;
+  font-weight: 600;
+}
+
+#reminderButtonsContainer {
+  align-content: center;
+  margin: auto 0 auto 0;
+  font-weight: 600;
+}
+
+.reminderButton {
+  color: #fff;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+#yesButton {
+  padding-right: 60px;
+}
+
+#viewProgButton {
+  align-self: center;
+  color: white;
+  background-color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#testerButton, #clearDBButton, #openChart {
+  align-self: center;
+  color: white;
+  background-color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+  #reminderBar {
+    flex-direction: row;
+  }
+
+  #reminderBar h4 {
+    margin: auto 0 auto 0;
+  }
+
+  #reminderQuestion {
+    max-width: 350px;
+    padding-left: 60px;
+    margin-bottom: -1px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  #reminderBar h4 {
+    margin: auto 0 auto 0;
+  }
+
+  #reminderBar {
+    flex-direction: row;
+  }
+}
